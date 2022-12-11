@@ -1,0 +1,9 @@
+La Mockup es muy simple e incluye piezas lógicas muy básicas, por lo que sólo está pensada para pruebas
+(también incluye la gestión de errores) y alguna programación tendrá que ser hecha sobre los sistemas SIVEDUC estos
+requerimientos no serán incluidos aquí.
+
+Además, también se simplifica el escenario para el envío de las fechas.
+El alumno siempre envía las fechas a la misma secretaria preconfigurada:
+    "SECRETARIA_ESCUELA" usarios[0].
+    "SECRETARIA_ACADEMICA" usuarios[1]
+Esto significa que la correspondencia con las solicitudes de fechas no es correcta.

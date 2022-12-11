@@ -1,10 +1,11 @@
 from behave import *
-from mockup.system import Sistema
+from mockup.system import Sistema, Usario
 
 
 @given('el usuario está conectado al sistema, pero no se le permite ver el sistema de licitación')
 def step_impl(context):
-    Sistema.conectando_usario('INVITADO')
+    nuevo_usuario = Usario('INVITADO')
+    Sistema.conectando_usario(nuevo_usuario)
     context.actual_usario = Sistema.usarios[-1]
 
 @then('el sistema no muestra la página de solicitud')
